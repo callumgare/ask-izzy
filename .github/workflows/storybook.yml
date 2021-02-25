@@ -11,6 +11,8 @@ jobs:
         with:
           persist-credentials: false
       - name: Install and Build 🔧
+        env:
+          STORYBOOK_ZEPLIN_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoicGVyc29uYWxfYWNjZXNzX3Rva2VuIiwiY2xpZW50X2lkIjoiNjAzNzZlZGM2MDBmZTMwNDRiYmYzZmQ5Iiwic2NvcGUiOiIiLCJpYXQiOjE2MTQyNDU1OTYsImV4cCI6MTkyOTgxNDg1NiwiaXNzIjoiemVwbGluOmFwaS56ZXBsaW4uaW8iLCJzdWIiOiI2MDMzM2I5Y2RiMGE0NzE3NDhhNGYxNDYiLCJqdGkiOiIxZDZlYmJjZS0xZjJkLTQ0ZWItOWE5YS0wODI4ZDNiZGYyOGQifQ.w-rp8yAchpL-cyzJUqt8L-uaTAuztkvo_3O9pT89BbU
         run: |
           yarn install
           yarn build-storybook
